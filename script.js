@@ -88,7 +88,8 @@ function mostrarPregunta() {
 // Función para mostrar el resultado final
 function mostrarResultado() {
   contenedorCuestionario.classList.add("oculto");
-  btnSiguiente.classList.add("oculto"); // Ocultar botón siguiente
+  btnSiguiente.style.display = "none";
+  //btnSiguiente.classList.add("oculto"); // Ocultar botón siguiente
   contenedorResultado.classList.remove("oculto");
   textoPuntuacion.textContent = `Obtuviste ${puntuacion} de ${preguntas.length} respuestas correctas.`;
 }
